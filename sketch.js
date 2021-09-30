@@ -78,7 +78,7 @@ function draw() {
   
   background(180);
   //mostrar la puntuación
-  text("Puntaje: "+ score, 500,50);
+  text("Puntuación: "+ score, 500,50);
   
   console.log("esto es",gameState)
   
@@ -88,7 +88,7 @@ function draw() {
     restart.visible = false
     //mover suelo
     ground.velocityX = -4;
-    //puntaje
+    //puntuación
     score = score + Math.round(frameCount/60);
     
     if (ground.x < 0){
